@@ -20,38 +20,42 @@
 <body>
 <div class="wrap">
   <h1>WBA OpenRoaming — Hackathon Test Network</h1>
-  <p class="lead">Secure OpenRoaming network available for the Hackathon, enabling seamless and automatic handover between Cellular ⇄ Wi-Fi for cross-domain experiments (RADIUS, L4S, SCONE, RAW, DetNet, etc.).</p>
+  <p class="lead">
+    Secure <a href="https://openroaming.org" target="_blank" style="color:#9be7ff; text-decoration:underline;">OpenRoaming</a>
+    network available for the Hackathon, enabling seamless and automatic handover between Cellular ⇄ Wi-Fi
+    for cross-domain experiments (RADIUS, L4S, SCONE, RAW, DetNet, etc.).
+  </p>
 
   <section>
     <h2>Quick facts</h2>
     <ul>
-      <li><strong>SSID (test):</strong> <code>wba-hackathon-or</code></li>
-      <li><strong>Test realm / RADIUS:</strong> <code>hackathon.wballiance.test</code></li>
-      <li><strong>Example assets:</strong> QUIC/HTTP servers, RADIUS accounting & KPI API</li>
+      <li><strong>SSID (test):</strong> <code>OpenRoaming_IETF_Montreal</code></li>
+      <li><strong>Test realm / RADIUS:</strong> <code>partners.orportal.org</code></li>
+      <li><strong>Example assets:</strong> RADIUS servers & accounting, PKI APIs, Identity servers, QUIC/HTTP servers, etc.</li>
     </ul>
   </section>
 
   <section>
     <h2>How to get a profile</h2>
-    <p><a class="btn" href="https://example.com/profiles/wba-hackathon-passpoint.xml" target="_blank">⬇ Download Passpoint Profile</a></p>
-    <p>Or scan this QR:</p>
-    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://example.com/profiles/wba-hackathon-passpoint.xml" alt="QR Code">
+    <p><a class="btn" href="https://openroamingconnect.org/" target="_blank">⬇ Download OpenRoaming‑Passpoint Profile</a></p>
+    <p><img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://openroamingconnect.org/" alt="OpenRoaming QR Code"></p>
   </section>
 
   <section>
     <h2>Install & test</h2>
     <ul>
-      <li>Attach via Passpoint and open a QUIC HTTP session (port <code>4443</code>).</li>
-      <li>Trigger handover between Cellular/Wi-Fi and observe session continuity.</li>
-      <li>Run throughput and latency tests; capture RADIUS accounting.</li>
+      <li>Attach via OpenRoaming‑Passpoint (device should start scanning automatically).</li>
+      <li>(Observational) Open a QUIC HTTP session (port <code>4443</code>).</li>
+      <li>Trigger handover between Cellular/Wi‑Fi and observe session continuity.</li>
+      <li>Run throughput and latency tests; capture RADIUS packets / accounting.</li>
     </ul>
-    <p><a class="btn" href="https://example.com/test-scripts.zip" target="_blank">🧰 Download test scripts</a></p>
   </section>
 
   <section>
     <h2>Need help?</h2>
-    <p>Visit the WBA table at the Hackathon or contact:<br>
-      <strong>bruno@wballiance.com</strong> or <strong>hackathon@ietf.org</strong></p>
+    <p>Visit the <strong>L4S</strong> or <strong>RADIUS</strong> table at the Hackathon or contact:<br>
+      <strong><a href="mailto:openroaming@wballiance.com" style="color:#9be7ff;">openroaming@wballiance.com</a></strong>
+    </p>
     <p>Please include your team name and test device(s) when requesting logs or profiles.</p>
   </section>
 
