@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>WBA OpenRoaming — Hackathon Test Network</title>
+<style>
+  body {font-family: 'Inter', Arial, sans-serif; background:#0f1724; color:#e6eef8; margin:0; padding:0;}
+  .wrap {max-width:960px; margin:auto; padding:2rem;}
+  h1 {color:#9be7ff; margin-bottom:0.5rem;}
+  p.lead {color:#cfeeff; margin-top:0;}
+  section {background:#0b1220; border-radius:12px; padding:1.5rem; margin-top:1.5rem;}
+  a.btn {display:inline-block; background:#0ea5a3; color:#04131a; padding:0.7rem 1rem; border-radius:8px;
+         text-decoration:none; font-weight:600; margin-top:0.5rem;}
+  a.btn:hover {background:#13c5c2;}
+  code {background:#071827; color:#b9f2ff; padding:2px 6px; border-radius:4px;}
+  footer {font-size:0.9rem; margin-top:2rem; color:#9fb2c8;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>WBA OpenRoaming — Hackathon Test Network</h1>
+  <p class="lead">Secure OpenRoaming network available for the Hackathon, enabling seamless and automatic handover between Cellular ⇄ Wi-Fi for cross-domain experiments (RADIUS, L4S, SCONE, RAW, DetNet, etc.).</p>
+
+  <section>
+    <h2>Quick facts</h2>
+    <ul>
+      <li><strong>SSID (test):</strong> <code>wba-hackathon-or</code></li>
+      <li><strong>Test realm / RADIUS:</strong> <code>hackathon.wballiance.test</code></li>
+      <li><strong>Example assets:</strong> QUIC/HTTP servers, RADIUS accounting & KPI API</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How to get a profile</h2>
+    <p><a class="btn" href="https://example.com/profiles/wba-hackathon-passpoint.xml" target="_blank">⬇ Download Passpoint Profile</a></p>
+    <p>Or scan this QR:</p>
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://example.com/profiles/wba-hackathon-passpoint.xml" alt="QR Code">
+  </section>
+
+  <section>
+    <h2>Install & test</h2>
+    <ul>
+      <li>Attach via Passpoint and open a QUIC HTTP session (port <code>4443</code>).</li>
+      <li>Trigger handover between Cellular/Wi-Fi and observe session continuity.</li>
+      <li>Run throughput and latency tests; capture RADIUS accounting.</li>
+    </ul>
+    <p><a class="btn" href="https://example.com/test-scripts.zip" target="_blank">🧰 Download test scripts</a></p>
+  </section>
+
+  <section>
+    <h2>Need help?</h2>
+    <p>Visit the WBA table at the Hackathon or contact:<br>
+      <strong>bruno@wballiance.com</strong> or <strong>hackathon@ietf.org</strong></p>
+    <p>Please include your team name and test device(s) when requesting logs or profiles.</p>
+  </section>
+
+  <footer>
+    © 2025 Wireless Broadband Alliance — Open Source Initiative<br>
+    <a href="https://github.com/wireless-broadband-alliance" style="color:#5cc4ff;">GitHub Organization</a>
+  </footer>
+</div>
+</body>
+</html>
